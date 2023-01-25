@@ -28,7 +28,7 @@ builder.Services.AddDbContext<AppDbContext>(options => options.UseSqlServer(buil
 ////Authentication and authorization
 //builder.Services.AddIdentity<ApplicationUser, IdentityRole>().AddEntityFrameworkStores<AppDbContext>();
 //builder.Services.AddMemoryCache();
-//builder.Services.AddSession();
+builder.Services.AddSession();
 //builder.Services.AddAuthentication(options =>
 //{
 //    options.DefaultScheme = CookieAuthenticationDefaults.AuthenticationScheme;
